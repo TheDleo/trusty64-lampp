@@ -16,12 +16,13 @@ Requirements
 * VirtualBox <http://www.virtualbox.com>
 * Vagrant <http://www.vagrantup.com>
 * Git <http://git-scm.com/>
+* vagrant-triggers (vagrant plugin install vagrant-triggers)
 
 Usage
 -----
 
 ### Startup
-	$ git clone http://www.github.com/mattandersen/vagrant-lamp
+	$ git clone git@github.com:TheDleo/trusty64-lampp.git
 	$ cd vagrant-lamp
 	$ vagrant up
 
@@ -30,10 +31,10 @@ That is pretty simple.
 ### Connecting
 
 #### Apache
-The Apache server is available at <http://localhost:8888>
+The Apache server is available at <http://localhost>
 
 #### MySQL
-Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.
+Externally the MySQL server is available at port 3306, and when running on the VM it is available as a socket or at port 3306 as usual.
 Username: root
 Password: root
 
@@ -43,6 +44,7 @@ Technical Details
 * Apache 2
 * PHP 5.5
 * MySQL 5.5
+* PostgreSQL 9.3
 
 We are using the base Ubuntu 14.04 box from Vagrant. If you don't already have it downloaded
 the Vagrantfile has been configured to do it for you. This only has to be done once
